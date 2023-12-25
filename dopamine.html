@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html> 
+
+<head>
+ <link rel="stylesheet"  href="dopamine.css" />
+
+ <script>
+  function calculateBill() {
+     let total = 0;
+ 
+     let checkboxes = document.getElementsByName('dessert');
+     for (let i = 0; i < checkboxes.length; i++) {
+         if (checkboxes[i].checked) {
+             let prices =  parseFloat(checkboxes[i].setprice);
+             let quantity = parseInt(document.getElementsByName('dop'+i).value);
+             total += prices * quantity;
+         }
+     }
+     document.getElementById('bill').innerHTML = 'Total Bill: $'.total ;
+ 
+   }
+
+   function msg()
+      {
+          alert("your order have been send and will be delivered soon");  
+       
+      }
+</script>
+
+ <title> Dopamine for dessert </title>
+</head>
+
+<body> 
+
+ <div class="intro">
+  <nav >
+    <label class="logo">Dopamine</label>
+    <ul>
+      <li><a class="active" href="#1">HOME</a></li>
+      <li><a href="#2">MENU</a></li>
+      <li><a href="#6">OFFERS</a></li>
+      <li><a href="#3">ORDER</a></li>
+      <li><a href="#a4">ABOUT</a></li>
+      <li><a href="#5">CONTACT</a></li>
+    </ul>
+  </nav>
+   
+ <img id="1" src="donuts.jpg" alt=" Oops!! the image does not load">  
+   <p id="demo">Welcome to DOPAMINE, a taste that makes you feel alive</p>
+ <p>  We don't just make dessert, We create special moments.Using premium ingredients and handmade with you in mind.
+  Each one of our dessert exceeds the expectations for the word &quot;Dessert &quot; .
+ Beatifully detailed and perfectly made.You are getting something truly creative with the Baked Equation. </p><br>
+
+ </div>
+  
+ <div class="cate">
+ <img  src="buneo donut.jpeg" height="400px" width="400px"> 
+ <img src="cupcakes.jpeg" height="400px" width="400px"> 
+ </div>
+ <h1 id="6">HAPPY CHRISTMAS</h1>
+ <h2 >CHRISTMAS OFFER</h2>
+ <p > <span> MERRY CHRISTMAS</span>, Celebrating christmas this year we will give offers that will continue until the beginning of the new year. Because Dopamine
+  keen to make offers in all occaisions and times availabe. <span>So for cupcakes orders: if you order 4 cupcakes you will get 1 for free, and if you order
+   10 cupcakes you will get 2 for free. For our dounts bomb:if you order 3 dounts bomb you will get 1 for free, and if you order
+   7 dounts bomb you will get 2 for free. So imagine orderig  a big abox of both cupcakes and donuts bomb of course you will get an offer but the offer you will 
+   get is a surprise</span></So>.</p><br>
+   <p id="x"> <span>stay awake,</span>   For our loyal customers and those who enjoy our desserts do not forget to be updated to our offers.
+   we always make offers in special occaisions and our special events and to express our feelings, as making offers is our love language to our customers   
+   we always take care of our customers either by  providing them delicious and wonderful desserts or at reasonable prices.
+   So we are working to provide good offers as possible as we can.So be careful to keep updated.</p>
+   <div class="container">
+    <div class="heading">
+      <h5 id="2"> menu</h5>
+    </div>
+    <div class="menus">
+      <div class="single-menu">
+        <h2>cupcakes</h2>
+      <div class="menu-box">
+        <img src="Vanilla cupcake.jpeg">
+        <h4>vanilla  cupcake</h4>
+        <h5 >EGP 25</h5>
+       </div>
+       <div class="menu-box">
+        <img src="blackberry cupcake.jpeg">
+        <h4>blackberry cupcake</h4>
+        <h5 >EGP 35</h5>
+       </div>
+       <div class="menu-box">
+        <img src="chocolate penutbutter cupcake.jpeg">
+        <h4>chocolate penutbutter cupcake</h4>
+        <h5 >EGP 40</h5>
+       </div>
+       <div class="menu-box">
+        <img src="chocolate chips cupcake.jpeg">
+        <h4>chocolate chips cupcake</h4>
+        <h5 >EGP 35</h5>
+       </div>
+       <div class="menu-box">
+        <img src="blueberry cupcake.jpeg">
+        <h4>blueberry cupcake</h4>
+        <h5 >EGP 35</h5>
+       </div>
+       <div class="menu-box">
+        <img src="salted caramel cupcake.jpeg">
+        <h4>salted caramel cupcake</h4>
+        <h5 >EGP 35</h5>
+       </div>
+       <div class="menu-box">
+        <img src="lotus cupcake.jpeg">
+        <h4>lotus cupcake</h4>
+        <h5 >EGP 40</h5>
+       </div>
+       <div class="menu-box">
+        <img src="cookies N cream Cupcake.jpg">
+        <h4>cookies n cream cupcake</h4>
+        <h5>EGP 35</h5>
+       </div>
+       <div class="menu-box">
+        <img src="chocolate cupcake.jpeg">
+        <h4>chocolate cupcake</h4>
+        <h5 >EGP 40</h5>
+       </div>
+       <div class="menu-box">
+        <img src="Redvelvet cupcake.jpeg">
+        <h4>Redvelvet cupcake</h4>
+        <h5 >EGP 35</h5>
+       </div>
+       <div class="single-menu">
+        <h2>dounts bomb</h2>
+       <div class="menu-box">
+        <img src="Nutella Dount.jpeg">
+        <h4>Nutella donut bomb</h4>
+        <h5 >EGP 50</h5>
+       </div>
+       <div class="menu-box">
+        <img src="Lotus Dount.jpeg">
+        <h4>lotus donut bomb</h4>
+        <h5>EGP 55</h5>
+       </div>
+       <div class="menu-box">
+        <img src="buneo donut.jpeg">
+        <h4>buneo donut bomb</h4>
+        <h5 >EGP 45</h5>
+       </div>
+       <div class="menu-box">
+        <img src="Strawberry Dount.jpeg">
+        <h4>Strawberry donut bomb</h4>
+        <h5 >EGP 30</h5>
+       </div>
+       <div class="menu-box">
+        <img src="cream donut.jpeg">
+        <h4>cream brulee donut bomb</h4>
+        <h5 >EGP 50</h5>
+       </div>
+       <div class="menu-box">
+        <img src="Pistachio Donut.jpeg">
+        <h4>Pistachio donut bomb</h4>
+        <h5 >EGP 55</h5>
+       </div>
+       <div class="menu-box">
+        <img src="Cream Pastry Dount.jpeg">
+        <h4>cream pastry donut bomb</h4>
+        <h5 >EGP 35</h5>
+       </div>
+      </div>
+    </div>
+    </div>
+ 
+    
+ 
+
+ <h4 id="3"> order form</h4>
+ <h6>Choose your favourite and write how many each you want</h6>
+ <div class="mnu-chos">
+  <div class="c1">
+ <div class="choose">
+  <input for="cp1" type="checkbox" name="dessert" price="25"> 
+  <label id="cp1"> vanilla  cupcake</label></div>  
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp2" type="checkbox" name="dessert" price="35"> 
+  <label id="cp2"> blackberry cupcake</label> </div> 
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp3" type="checkbox" name="dessert"  price="25"> 
+  <label id="cp3">chocolate penutbutter cupcake</label> </div> 
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+    
+
+  <div class="choose">
+  <input for="cp4" type="checkbox" name="dessert"  price="25"> 
+  <label id="cp4">chocolate chips cupcake</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+
+ 
+  <div class="choose">
+  <input for="cp5" type="checkbox" name=" dessert" price="25" > 
+  <label id="cp5"> blueberry cupcake</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  </div>
+  <div class="c1">
+  <div class="choose">
+  <input for="cp6" type="checkbox" name="dessert"  price="25"> 
+  <label id="cp6">salted caramel cupcake</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp7" type="checkbox" name="dessert" price="25"> 
+  <label id="cp7">lotus cupcake</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp8" type="checkbox" name=" dessert" price="25" >
+  <label id="cp8"> cookies n cream cupcake</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+ 
+
+  <div class="choose">
+  <input for="cp9" type="checkbox" name="dessert" price="25"> 
+  <label id="cp9"> chocolate cupcake</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp10" type="checkbox" name="dessert" price="25"> 
+  <label id="cp10"> Redvelvet cupcake</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  </div>
+  <div class="c1">
+  <div class="choose">
+  <input for="cp11" type="checkbox" name="dessert" price="25">
+  <label id="cp11">Nutella donut bomb</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp12" type="checkbox" name="dessert" price="25" > 
+  <label id="cp12">lotus donut bomb</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp13" type="checkbox" name="dessert" price="25"> 
+  <label id="cp13"> buneo donut bomb</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  
+
+  <div class="choose">
+  <input for="cp14" type="checkbox" name="dessert"  price="25"> 
+  <label id="cp14"> Strawberry donut bomb</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+ 
+
+  <div class="choose">
+  <input for="cp15" type="checkbox" name="dessert" price="25"> 
+  <label id="cp15">cream brulee donut bomb</label></div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+  </div>
+  <div class="c1">
+  <div class="choose">
+  <input for="cp16" type="checkbox" name="dessert" price="25">
+  <label id="cp16">Pistachio donut bomb</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+ 
+
+  <div class="choose">
+  <input for="cp17" type="checkbox" name="dessert" price="25" > 
+  <label id="cp17"> cream pastry donut bomb</label> </div>
+  <input class="dpmn" type="number" name="dop"  value="0" min="0"> 
+ </div>
+ </div>
+
+ <h6> Enter your data</h3>
+ <div class="order">
+ 
+ <form action="dopamine.php" method="post">
+  <div class="frm-ordr">
+ <div class="frm">
+ <label for="txtbox1"> first name:</label>
+ <input  class="c4" id="txtbox1" type="text" name="first name" maxlenght="30" required> 
+ </div>
+
+ <div class="frm">
+ <label for="txtbox2"> last name:</label>
+ <input  class="c4"id="txtbox2" type="text" name="last name" maxlenght="30" required> 
+ </div>
+
+ <div class="frm">
+ <label for="txtbox3"> e-mail:</label>
+ <input  class="c4"id="txtbox3" type="e-mail" name="e-mail" required> 
+ </div>
+ </div>
+
+ <div class="frm-ordr">
+ <div class="frm">
+ <label for="txtbox4"> address:</label>
+ <input  class="c4"id="txtbox4" type="text" name="address" required> 
+ </div>  
+  
+ <div class="frm">
+ <label for="txtbob5"> phone number:</label>
+ <input  class="c4"id="txtbox5" type="text" name="phone number" required >
+ </div>
+ 
+ <div class="frm">
+ <label for="txtbox6"> card number:</label>
+ <input  class="c4"id="txtbox6" type="text" name="card number" required> 
+ </div>
+ </div>
+ <div class="frm-ordr">
+ <div class="frm">
+ <label for="txtbox7"> security number:</label>
+ <input  class="c4" id="txtbox7" type="password" name="security number" required> 
+ </div>
+
+ <p id="bill"></p>
+ <div class="frm">
+ <label for="txtbox8"> expiry date:</label>
+ <input  class="c4" id="txtbox8"  type="text"name="expiry date" placeholder="MM/YY">
+ <br>
+ </div>
+
+ <div class="frm">
+  <div class="bt7"></div>
+  <button type="button" onclick="calculateBill()">Calculate Bill</button>
+  <button type="submit"  id="sbmt"name="cnfrm" onclick="msg()">confirm</button>
+  <button type="reset"   id="cncl">reset</button>
+
+  </div>
+</div>
+ <form>
+</div>
+<hr>
+<h5 id="a4">ABOUT US</h5>
+<div class="abt">
+ <div class="info">
+<img   src="mission.png">
+<img src="values.png">
+ </div>
+ <div class="disc">
+ <p>Dopamine desserts’ philosophy is simple: we aim to please. By freshly baking our gourmet cupcakes daily using only the best ingredients,
+   we guarantee a delicious and uplifting experience for each customer. By being socially responsible, we do our best to help develop our 
+   communities in a partnership with respected charities and non-profit organizations. We believe these activities go hand in hand to give 
+   Egypt the best of life’s little pleasures.</p>
+ <p>We take ownership in what we do therefore we do our best to ensure that our customers receive the best quality with superior customer service.
+   We guarantee a high level of responsiveness to the market needs to help ensure customer satisfaction. We do everything with PASSION and LOVE to
+   uphold excellency, integrity and pride.</p>
+ </div>
+</div>  
+ <hr >
+<div class="fdbk">
+  <h5 id="5">
+    Contact us
+  </h5>
+  <p>
+    if you wanna order anytime and prefer to pay cash you can call our number 01054793251 or our hot line 19663<br>
+    Have feedback about our products or service? Please contact Dopamine directly at: info@dopaminedessert.com
+  </p>
+  <a href="login.php">Login</a><br>
+  <a href="signup.php">signup</a>
+ 
+</div>
+</body>
+</html>

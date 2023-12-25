@@ -1,0 +1,243 @@
+body{background-color:cornsilk;}
+
+nav{background:peru;
+     height: 80px; 
+     width: 100%;
+     position: fixed;}
+
+label.logo {color:white;
+    font-size: 70px;
+    line-height: 80px;
+    padding: 100px;
+    font-weight: bold;}
+
+nav ul{float:right;
+     margin-right: 20px;}
+     
+nav ul li{display: inline-block;
+     line-height: 80px;
+     margin: 5px;}
+
+nav ul li a{color:black;
+     font-size: 15px;
+     padding:7px 13px;
+     border-radius: 3px;}
+
+a.active,a:hover{background:burlywood;
+     transition: 0.7s;}     
+
+.intro h5{ font-size: 15px;
+     background-color:peru;
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 100px;word-spacing: 100px;}
+
+.intro h5 {display: flex;
+      justify-content:space-evenly;}
+
+.intro img{margin:0px 30px 10px 110px;
+      padding-top: 100px;}
+
+
+#demo{
+     font-size: 50px;
+     font-style: italic;
+     color:darkmagenta;
+}    
+.intro p {display: flex;
+      justify-content:center;
+      font-size: 25px;
+      text-align:justify;
+      text-align-last:center;
+      margin: 80px; }
+
+.cate{display: flex;
+      justify-content:space-evenly;}
+
+h1{font-size: 45px;
+     font-weight: bold;
+     text-align: center;
+     background-image: url("christmas.jpeg");
+     color: white;
+     margin-top: 80px;
+     padding-top: 80px;
+     padding-bottom: 80px;} 
+
+p{font-size: 25px;
+     text-align:justify;
+     text-align-last:center;
+     margin: 80px; }
+
+
+
+h2{font-size: 38px;
+     font-weight: bold;
+     text-align: center;
+     animation-name: example;
+     animation: color-change 4s infinite;}
+
+@keyframes color-change {
+     0% {
+       background-color: red;
+    }
+     33% {
+       background-color: green;
+    }
+     66% {
+       background-color: yellow;
+    }
+     100% {
+       background-color:red;
+    }
+}
+  
+span{font-family: fantasy;
+    color: sienna;}
+
+#x span{font-size: larger;
+        color: black;}
+    
+
+h3{word-spacing: 600px;
+     background-color:olivedrab;
+     line-height: 80px;
+     font-size: 25px;
+     text-indent: 250px;}
+
+.heading h5{font-size: 100px;
+     font-family:fantasy;
+     text-align: center;
+     background-color: burlywood;
+     border-radius: 50%;
+     margin-bottom: 40px;
+     margin-top: 40px;
+     margin-left: 500px;
+     margin-right: 500px;}
+   
+.menus{display: flex; 
+       justify-content: center;}
+
+.single-menu h2{background-color:olivedrab !important;
+     line-height: 80px;
+     color: white;
+     text-transform: uppercase;
+     display: flex;
+     justify-content:space-around;
+     font-size: 40px;}
+ 
+.menu-box img{max-width: 250px;
+     max-height: 250px;
+     border-radius:10px;
+     border: 3px solid #6d6875;
+     margin-bottom: 30px;}
+
+.menu-box h4{text-transform: capitalize;
+     font-size:larger; 
+     text-align: justify;}
+
+.menu-box h5 {font-size: larger;
+     margin-bottom: 50px;  
+     margin-top: 30px;
+     margin-left: 0px;
+     margin-right: 100px;
+     display: flex;
+     justify-content: space-evenly;
+     border: 1px solid black;
+     border-radius: 50px;
+     background-color:#cb997e;} 
+
+@media only screen and (max-width:800px){
+     .container{width: 400px;}
+     .single-menu{flex-basis: 100%;}}     
+
+.mnu-chos{
+     display: flex;
+     flex-wrap:nowrap;
+     justify-content: space-between;
+}    
+     
+.choose{
+      font-size: 23px;
+     
+    
+     }     
+     
+.dpmn{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 50px;
+     margin-left: 50px;
+    
+     }
+     
+.order{
+      display: flex;
+      flex-wrap:nowrap;
+      justify-content: space-between;
+      margin-top: 100px;
+      }
+
+.frm-ordr{
+     display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between; 
+   
+     } 
+     
+.frm{
+     font-size: xx-large;
+    
+}
+
+.frm input{
+     font-size: x-large;
+}
+
+.c4{
+     display: flex;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-right: 50px;
+    
+     padding-left: 100px;
+     font-size: large;
+}
+     
+
+h6{
+     font-size: 30px;
+    color:crimson;
+}
+
+h4{ font-size: 70px;
+     text-align: center;
+     margin-top: 0px;}
+     
+.order button{font-size: 30px;
+     margin-left: 250px;
+     margin-top: 20px;
+     margin-bottom: 40px;}     
+   
+.bt7{
+     display: flex;
+     justify-content: space-evenly;
+     margin-left: 100px;
+} 
+
+#a4{
+     font-size: 45px;
+    
+}
+
+
+.info{
+     display: flex;justify-content: space-evenly;
+     margin-top: 100px;}
+
+.disc{ display: flex;justify-content: space-evenly;
+     margin-top: 50px}
+
+.fdbk h5{text-align: left; 
+     font-size: 40px;
+     margin-left: 50px; 
+     color: purple; }
+
